@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis Home</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #f8fafc;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      width: 100%;
+      max-width: 860px;
+    }
+
+    .card {
+      background: #1e2330;
+      border: 1px solid #2d3347;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .card:hover {
+      border-color: #4f6ef7;
+      background: #232a3d;
+      transform: translateY(-2px);
+    }
+
+    .card-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+
+    .card-desc {
+      font-size: 0.82rem;
+      color: #64748b;
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #334155;
+      font-size: 0.78rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jarvis Home</h1>
+    <p>Personal infrastructure dashboards</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="https://wan2.jarvis-murphy-ai.com/" target="_blank" rel="noopener">
+      <div class="card-icon">🌐</div>
+      <div class="card-title">WAN Utilization</div>
+      <div class="card-desc">Network bandwidth and uptime across WAN links</div>
+    </a>
+
+    <a class="card" href="https://hotelbot.jarvis-murphy-ai.com/dashboard" target="_blank" rel="noopener">
+      <div class="card-icon">🏨</div>
+      <div class="card-title">Hotel Bot</div>
+      <div class="card-desc">Hotel search and rate monitoring tool</div>
+    </a>
+
+    <a class="card" href="https://jarvis-murphy-ai.com/d/powerwall3-main/tesla-powerwall-3" target="_blank" rel="noopener">
+      <div class="card-icon">⚡</div>
+      <div class="card-title">Tesla Powerwall</div>
+      <div class="card-desc">Solar production, battery state, and grid usage</div>
+    </a>
+
+    <a class="card" href="https://jarvis-murphy-ai.com/d/health-001/health-and-activity-dashboard" target="_blank" rel="noopener">
+      <div class="card-icon">❤️</div>
+      <div class="card-title">Health Monitor</div>
+      <div class="card-desc">Activity, sleep, and health metrics</div>
+    </a>
+  </div>
+
+  <footer>jarvis-murphy-ai.com</footer>
+</body>
+</html>
